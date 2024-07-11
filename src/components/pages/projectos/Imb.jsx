@@ -50,7 +50,7 @@ const ScrollableImageContainer = styled(Box)`
 const AdditionalImagesContainer = styled(Box)`
   display: flex;
   justify-content: space-around;
-  background-image: url("/honda1/honda1-19.png");
+  background-image: url("/imb/imb4.png");
   background-size: cover;
   background-position: center;
   padding: 20px;
@@ -72,7 +72,7 @@ const AnimatedImage = styled("img")`
   }
 `;
 
-const Honda1 = () => {
+const Imb = () => {
   const [showAdditionalImages, setShowAdditionalImages] = useState(false);
   const [showFinalImages, setShowFinalImages] = useState(true);
 
@@ -86,21 +86,16 @@ const Honda1 = () => {
   return (
     <>
       <Box>
-        <img
-          height={"856px"}
-          width={"100%"}
-          src="/honda1/honda1-1.png"
-          alt="taller de Honda"
-        />
+        <img height={"856px"} width={"100%"} src="/imb/imb1.png" alt="" />
       </Box>
       <Box
         sx={{ cursor: "pointer" }}
         position={"absolute"}
-        top={"140px"}
-        left={"29%"}
+        top={"330px"}
+        left={"24%"}
       >
         <ScrollLink to="seccionDestino" smooth={true}>
-          <FloatingImage src="/honda/honda.png" alt="honda" />
+          <FloatingImage src="/imb/imb.png" alt="honda" />
         </ScrollLink>
       </Box>
 
@@ -109,7 +104,7 @@ const Honda1 = () => {
         pt={5}
         mt={-1}
         sx={{
-          backgroundColor: "#E11F27",
+          backgroundColor: "#5AA250",
           display: "flex",
           width: "100%",
           height: "102px",
@@ -126,20 +121,7 @@ const Honda1 = () => {
               color: "#FFFFFF",
             }}
           >
-            Cliente: <strong>Honda Argentina</strong>
-          </Typography>
-        </Box>
-        <Box width={"420px"}>
-          <Typography
-            sx={{
-              fontFamily: "Inter",
-              fontWeight: "400",
-              fontSize: "18px",
-              lineHeight: "21.78px",
-              color: "#FFFFFF",
-            }}
-          >
-            Proyecto: <strong>Programa de comunicación interna</strong>
+            Cliente: <strong>IMB</strong>
           </Typography>
         </Box>
         <Box>
@@ -152,122 +134,71 @@ const Honda1 = () => {
               color: "#FFFFFF",
             }}
           >
-            Año: <strong>2017 - 2020</strong>
+            <a
+              target="_blank"
+              style={{ color: "white", textDecoration: "none" }}
+              href="http://www.imb.com.ar/index.html"
+            >
+              {" "}
+              Proyecto: <strong>Página web</strong>
+            </a>
+          </Typography>
+        </Box>
+        <Box>
+          <Typography
+            sx={{
+              fontFamily: "Inter",
+              fontWeight: "400",
+              fontSize: "18px",
+              lineHeight: "21.78px",
+              color: "#FFFFFF",
+            }}
+          >
+            Año: <strong>2015</strong>
           </Typography>
         </Box>
       </Box>
-      <Box width={"100%"}>
+      <Box
+        sx={{
+          backgroundImage: "url('/imb/imb2.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+        width={"100%"}
+      >
         <img
           height={"1000px"}
           width={"100%"}
-          src="/honda1/honda1-2.png"
+          src="/imb/imb3.png"
           alt="computadora"
         />
       </Box>
+      
       <ScrollableImageContainer>
         <img width={"100%"} src="/honda1/honda1-3.png" alt="" />
       </ScrollableImageContainer>
 
-      <Box mt={-1} display={"flex"} bgcolor={"#F0F0F0"}>
-        <Box mt={10} ml={10}>
-          <FloatingImage src="/honda1/honda1-4.png" alt="honda" />
-        </Box>
-        <Box mt={2} ml={8}>
-          <FloatingImage src="/honda1/honda1-5.png" alt="honda" />
-        </Box>
-        <Box mt={10} ml={8}>
-          <FloatingImage src="/honda1/honda1-6.png" alt="honda" />
-        </Box>
-      </Box>
-      <Box display={"flex"} bgcolor={"#F0F0F0"}>
-        <Box mt={18} ml={20}>
-          <FloatingImage src="/honda1/honda1-7.png" alt="honda" />
-        </Box>
-        <Box mt={10} ml={20}>
-          <FloatingImage src="/honda1/honda1-8.png" alt="honda" />
-        </Box>
-      </Box>
-      <Box mt={-12}>
-        <img
-          width={"100%"}
-          height={"936px"}
-          src="/honda1/honda1-9.png"
-          alt="taller de honda"
-        />
-      </Box>
-
-      <Box
-        onMouseEnter={() => setShowAdditionalImages(true)}
-        onMouseLeave={() => setShowAdditionalImages(false)}
-        position={"absolute"}
-        top={"3400px"} // Ajusta la posición según sea necesario
-        left={"76%"} // Ajusta la posición según sea necesario
-        sx={{ cursor: "pointer" }}
-      >
-        <FloatingImage src="/honda1/honda1-10.png" alt="honda" />
-      </Box>
-
-      {showAdditionalImages && (
-        <>
-          <Box position={"absolute"} top={"3400px"} left={"6%"}>
-            <FloatingImage
-              width={"80%"}
-              src="/honda1/honda1-11.png"
-              alt="honda"
-            />
-          </Box>
-          <Box position={"absolute"} top={"3350px"} left={"40%"}>
-            <FloatingImage
-              width={"80%"}
-              src="/honda1/honda1-12.png"
-              alt="honda"
-            />
-          </Box>
-          <Box position={"absolute"} top={"3700px"} left={"74%"}>
-            <FloatingImage src="/honda1/honda1-13.png" alt="honda" />
-          </Box>
-          <Box position={"absolute"} top={"3780px"} left={"20%"}>
-            <FloatingImage
-              width={"80%"}
-              src="/honda1/honda1-14.png"
-              alt="honda"
-            />
-          </Box>
-          <Box position={"absolute"} top={"3880px"} left={"54%"}>
-            <FloatingImage
-              width={"80%"}
-              src="/honda1/honda1-15.png"
-              alt="honda"
-            />
-          </Box>
-        </>
-      )}
-
       <AdditionalImagesContainer m={5}>
         <Box>
           <AnimatedImage
-            src="/honda1/honda1-16.png"
-            alt="propaganda de honda"
+            width={"95%"}
+            src="/imb/imb5.png"
+            alt="sección de pagina web"
             className={showFinalImages ? "visible" : "hidden"}
           />
         </Box>
         <Box>
           <AnimatedImage
-            src="/honda1/honda1-17.png"
-            alt="propaganda de honda"
+             width={"80%"}
+             src="/imb/imb6.png"
+             alt="sección de pagina web"
             className={showFinalImages ? "visible" : "hidden"}
           />
         </Box>
-        <Box>
-          <AnimatedImage
-            src="/honda1/honda1-18.png"
-            alt="propaganda de honda"
-            className={showFinalImages ? "visible" : "hidden"}
-          />
-        </Box>
+       
       </AdditionalImagesContainer>
     </>
   );
 };
 
-export default Honda1;
+export default Imb;

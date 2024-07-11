@@ -6,6 +6,9 @@ const Proyectos = () => {
       <Box>
         <Typography>Proyectos </Typography>
       </Box>
+      <Box component={Link} to="/IMB">
+        <Typography>IMB</Typography>
+      </Box>
       <Box component={Link} to="/honda">
         <Typography>Honda</Typography>
       </Box>
