@@ -15,21 +15,15 @@ const Proyectos = () => {
       <Box component={Link} to="/honda1">
         <Typography>Honda1</Typography>
       </Box>
-      <Box>
-        <Typography>Proyecto 1</Typography>
+      <Box component={Link} to="/TNyPlatex">
+        <Typography>IMB Platex</Typography>
       </Box>
-      <Box>
-        <Typography>Proyecto 1</Typography>
+      
+      <Box component={Link} to="/MinisterioDeObrasPublicas">
+        <Typography>Ministerio de obras públicas</Typography>
       </Box>
-      <Box>
-        <Typography>Proyecto 1</Typography>
-      </Box>
-      <Box>
-        <Typography>Proyecto 1</Typography>
-      </Box>
-      <Box>
-        <Typography>Proyecto 1</Typography>
-      </Box>
+
+      
     </Box>
   );
 };

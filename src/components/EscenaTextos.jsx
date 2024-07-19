@@ -20,7 +20,7 @@ function EscenaTextos () {
         <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
         <pointLight position={[-10, -10, -10]} />
         <mesh position={[-0.2,-5,0]} >
-      <planeGeometry args={[20, 25]} />
+      <sphereGeometry args={[10,1,1]} />
       <meshBasicMaterial  />
     </mesh>
       

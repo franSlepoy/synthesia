@@ -54,6 +54,7 @@ const AdditionalImagesContainer = styled(Box)`
   background-size: cover;
   background-position: center;
   padding: 20px;
+  
 `;
 
 const AnimatedImage = styled("img")`
