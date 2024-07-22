@@ -23,6 +23,10 @@ const Proyectos = () => {
         <Typography>Ministerio de obras públicas</Typography>
       </Box>
 
+      <Box component={Link} to="/DrayTek">
+        <Typography>DrayTek</Typography>
+      </Box>
+
       
     </Box>
   );

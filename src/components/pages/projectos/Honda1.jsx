@@ -72,7 +72,7 @@ const AnimatedImage = styled("img")`
   }
 `;
 
-const Honda1 = () => {
+const honda1 = () => {
   const [showAdditionalImages, setShowAdditionalImages] = useState(false);
   const [showFinalImages, setShowFinalImages] = useState(true);
 
@@ -270,4 +270,4 @@ const Honda1 = () => {
   );
 };
 
-export default Honda1;
+export default honda1;

@@ -8,6 +8,7 @@ import Imb from "./components/pages/projectos/Imb";
 import Tn from "./components/pages/projectos/Tn";
 import ObrasPublicas from "./components/pages/projectos/ObrasPublicas";
 import PSA from "./components/pages/projectos/PSA";
+import DrayTek from "./components/pages/projectos/DrayTek";
 
 const App = () => {
   return (
@@ -22,7 +23,7 @@ const App = () => {
           <Route path="/TNyPlatex" element={<Tn />} />
           <Route path="/MinisterioDeObrasPublicas" element={<ObrasPublicas />} />
           <Route path="/PSA" element={<PSA/>} />
-          
+          <Route path="/DrayTek" element={<DrayTek/>} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -184,7 +184,7 @@ const PSA = () => {
               color: "#FFFFFF",
             }}
           >
-            Cliente: <strong>PSA Peugeot Citroen</strong>
+            Cliente: <strong>PSA Peugeot Citroën</strong>
           </Typography>
         </Box>
         <Box width={"400px"}>
