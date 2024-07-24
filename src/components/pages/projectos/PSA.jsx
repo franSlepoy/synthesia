@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Hidden, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 import { useEffect, useState } from "react";
 
@@ -153,381 +153,402 @@ const PSA = () => {
 
   return (
     <>
-      <Box>
-        <img
-          style={{ objectFit: "cover" }}
-          height={"696px"}
-          width={"100%"}
-          src="psa/psa.png"
-          alt="foto de auto honda"
-        />
-      </Box>
-
-      <Box
-        pt={5}
-        mt={-1}
-        sx={{
-          backgroundColor: "#2F5183",
-          display: "flex",
-          width: "100%",
-          height: "102px",
-          justifyContent: "space-around",
-        }}
-      >
+      <Hidden lgDown>
         <Box>
-          <Typography
-            sx={{
-              fontFamily: "Inter",
-              fontWeight: "400",
-              fontSize: "18px",
-              lineHeight: "21.78px",
-              color: "#FFFFFF",
-            }}
-          >
-            Cliente: <strong>PSA Peugeot Citroën</strong>
-          </Typography>
-        </Box>
-        <Box width={"400px"}>
-          <Typography
-            sx={{
-              fontFamily: "Inter",
-              fontWeight: "400",
-              fontSize: "18px",
-              lineHeight: "21.78px",
-              color: "#FFFFFF",
-            }}
-          >
-            Proyecto: <strong>Programa de comunicación interna</strong>
-          </Typography>
-        </Box>
-        <Box>
-          <Typography
-            sx={{
-              fontFamily: "Inter",
-              fontWeight: "400",
-              fontSize: "18px",
-              lineHeight: "21.78px",
-              color: "#FFFFFF",
-            }}
-          >
-            Año: <strong>2010 - 2020</strong>
-          </Typography>
-        </Box>
-      </Box>
-
-      <Box>
-        <img
-          style={{ objectFit: "cover" }}
-          height={"856px"}
-          width={"100%"}
-          src="/psa/psa1.png"
-          alt=""
-        />
-      </Box>
-      <Box position={"absolute"} top={"1042px"} left={"172px"}>
-        <img src="psa/psa37.png" alt="" />
-      </Box>
-
-      <ScrollableImageContainer>
-        <img
-          width={"396px"}
-          height={"573px"}
-          style={{ objectFit: "cover" }}
-          src="/psa/psa2.png"
-          alt=""
-        />
-      </ScrollableImageContainer>
-
-      <Box height={"800px"} display={"flex"} mt={-1}>
-        {[0, 1, 2].map((index) => (
-          <Box
-            key={index}
-            sx={{
-              textAlign: "center",
-              pt: 8,
-              pb: 8,
-              width: "33.3%",
-              bgcolor: imageSets[imageIndices[index]][index].bgColor,
-            }}
-          >
-            <img src={imageSets[imageIndices[index]][index].src} alt="" />
-          </Box>
-        ))}
-      </Box>
-
-      <Box>
-        <img
-          style={{ objectFit: "cover" }}
-          height={"782px"}
-          width={"100%"}
-          src="/psa/psa9.png"
-          alt="PSA revista"
-        />
-      </Box>
-      <FadingImage sx={{ opacity: showSecondImage ? 0 : 1 }}>
-        <img src="/psa/psa10.png" alt="PSA revista" />
-      </FadingImage>
-      <FadingImage sx={{ opacity: showSecondImage ? 1 : 0 }}>
-        <img src="/psa/psa11.png" alt="PSA revista" />
-      </FadingImage>
-
-      <Box mt={-1}>
-        <img
-          style={{ objectFit: "cover" }}
-          height={"856px"}
-          width={"100%"}
-          src="/psa/psa12.png"
-          alt=""
-        />
-      </Box>
-
-      <Box width={"100%"} display={"flex"} height={"782px"}>
-        <Box width={"50%"} height={"782px"}>
           <img
-            width={"100%"}
             style={{ objectFit: "cover" }}
-            height={"782px"}
-            src="/psa/psa13.png"
-            alt=""
+            height={"696px"}
+            width={"100%"}
+            src="psa/psa.png"
+            alt="portada de PSA"
           />
         </Box>
-        <Box width={"50%"} height={"782px"} /* bgcolor={"#92D9F9"} */>
-          <FadingImage1
-            sx={{
-              position: "absolute",
-              top: "4084px",
-              opacity: showSecondImage ? 0 : 1,
-            }}
-          >
-            <img
-              width={"100%"}
-              style={{ objectFit: "cover" }}
-              height={"782px"}
-              src="/psa/psa14.png"
-              alt="PSA revista"
-            />
-          </FadingImage1>
-          <FadingImage1
-            sx={{
-              position: "absolute",
-              top: "4084px",
-              opacity: showSecondImage ? 1 : 0,
-            }}
-          >
-            <img
-              width={"100%"}
-              style={{ objectFit: "cover" }}
-              height={"782px"}
-              src="/psa/psa15.png"
-              alt="PSA revista"
-            />
-          </FadingImage1>
-        </Box>
-      </Box>
 
-      <Box position="relative" height="782px">
-        <FadingImage2
-          sx={{ opacity: showSecondImage ? 0 : 1, top: "0", left: 0, right: 0 }}
-        >
-          <img
-            width={"100%"}
-            style={{ objectFit: "cover" }}
-            height={"782px"}
-            src="/psa/psa16.png"
-            alt=""
-          />
-        </FadingImage2>
-        <FadingImage2
-          sx={{ opacity: showSecondImage ? 1 : 0, top: "0", left: 0, right: 0 }}
-        >
-          <img
-            width={"100%"}
-            style={{ objectFit: "cover" }}
-            height={"782px"}
-            src="/psa/psa17.png"
-            alt=""
-          />
-        </FadingImage2>
-      </Box>
-
-      <Box position={"absolute"} top={"5040px"} left={"22%"}>
-        <img src="/psa/psa18.png" alt="" />
-      </Box>
-
-      <Box>
         <Box
-          display={"flex"}
-          justifyContent={"space-evenly"}
-          bgcolor={"#E9E8E3"}
-          pt={8}
-          pb={6}
+          pt={5}
+          mt={-1}
+          sx={{
+            backgroundColor: "#2F5183",
+            display: "flex",
+            width: "100%",
+            height: "102px",
+            justifyContent: "space-around",
+          }}
         >
           <Box>
-            <img src="/psa/psa19.png" alt="" />
+            <Typography
+              sx={{
+                fontFamily: "Inter",
+                fontWeight: "400",
+                fontSize: "18px",
+                lineHeight: "21.78px",
+                color: "#FFFFFF",
+              }}
+            >
+              Cliente: <strong>PSA Peugeot Citroën</strong>
+            </Typography>
+          </Box>
+          <Box width={"400px"}>
+            <Typography
+              sx={{
+                fontFamily: "Inter",
+                fontWeight: "400",
+                fontSize: "18px",
+                lineHeight: "21.78px",
+                color: "#FFFFFF",
+              }}
+            >
+              Proyecto: <strong>Programa de comunicación interna</strong>
+            </Typography>
           </Box>
           <Box>
-            <img src="/psa/psa20.png" alt="" />
+            <Typography
+              sx={{
+                fontFamily: "Inter",
+                fontWeight: "400",
+                fontSize: "18px",
+                lineHeight: "21.78px",
+                color: "#FFFFFF",
+              }}
+            >
+              Año: <strong>2010 - 2020</strong>
+            </Typography>
           </Box>
         </Box>
-      </Box>
 
-      <Box display={"flex"}>
-        <Box width={"50%"}>
-          <Box position="relative" mt={12} ml="18%">
-            <FadingImage3
+        <Box>
+          <img
+            style={{ objectFit: "cover" }}
+            height={"856px"}
+            width={"100%"}
+            src="/psa/psa1.png"
+            alt=""
+          />
+        </Box>
+        <Box position={"absolute"} top={"1042px"} left={"172px"}>
+          <img src="psa/psa37.png" alt="" />
+        </Box>
+
+        <ScrollableImageContainer>
+          <img
+            width={"396px"}
+            height={"573px"}
+            style={{ objectFit: "cover" }}
+            src="/psa/psa2.png"
+            alt=""
+          />
+        </ScrollableImageContainer>
+
+        <Box height={"800px"} display={"flex"} mt={-1}>
+          {[0, 1, 2].map((index) => (
+            <Box
+              key={index}
               sx={{
-                opacity: currentImage === 0 ? 1 : 0,
-                position: "absolute",
-                top: 0,
-                left: 0,
+                textAlign: "center",
+                pt: 8,
+                pb: 8,
+                width: "33.3%",
+                bgcolor: imageSets[imageIndices[index]][index].bgColor,
               }}
             >
-              <img src="/psa/psa22.png" alt="" />
-            </FadingImage3>
-            <FadingImage3
+              <img src={imageSets[imageIndices[index]][index].src} alt="" />
+            </Box>
+          ))}
+        </Box>
+
+        <Box>
+          <img
+            style={{ objectFit: "cover" }}
+            height={"782px"}
+            width={"100%"}
+            src="/psa/psa9.png"
+            alt="PSA revista"
+          />
+        </Box>
+        <FadingImage sx={{ opacity: showSecondImage ? 0 : 1 }}>
+          <img src="/psa/psa10.png" alt="PSA revista" />
+        </FadingImage>
+        <FadingImage sx={{ opacity: showSecondImage ? 1 : 0 }}>
+          <img src="/psa/psa11.png" alt="PSA revista" />
+        </FadingImage>
+
+        <Box mt={-1}>
+          <img
+            style={{ objectFit: "cover" }}
+            height={"856px"}
+            width={"100%"}
+            src="/psa/psa12.png"
+            alt=""
+          />
+        </Box>
+
+        <Box width={"100%"} display={"flex"} height={"782px"}>
+          <Box width={"50%"} height={"782px"}>
+            <img
+              width={"100%"}
+              style={{ objectFit: "cover" }}
+              height={"782px"}
+              src="/psa/psa13.png"
+              alt=""
+            />
+          </Box>
+          <Box width={"50%"} height={"782px"} /* bgcolor={"#92D9F9"} */>
+            <FadingImage1
               sx={{
-                opacity: currentImage === 1 ? 1 : 0,
                 position: "absolute",
-                top: 0,
-                left: 0,
+                top: "4084px",
+                opacity: showSecondImage ? 0 : 1,
               }}
             >
-              <img src="/psa/psa23.png" alt="" />
-            </FadingImage3>
-            <FadingImage3
+              <img
+                width={"103%"}
+                style={{ objectFit: "cover" }}
+                height={"782px"}
+                src="/psa/psa14.png"
+                alt="PSA revista"
+              />
+            </FadingImage1>
+            <FadingImage1
               sx={{
-                opacity: currentImage === 2 ? 1 : 0,
                 position: "absolute",
-                top: 0,
-                left: 0,
+                top: "4084px",
+                opacity: showSecondImage ? 1 : 0,
               }}
             >
-              <img src="/psa/psa24.png" alt="" />
-            </FadingImage3>
+              <img
+                width={"103%"}
+                style={{ objectFit: "cover" }}
+                height={"782px"}
+                src="/psa/psa15.png"
+                alt="PSA revista"
+              />
+            </FadingImage1>
           </Box>
         </Box>
-        <Box width={"50%"}>
+
+        <Box position="relative" height="782px">
+          <FadingImage2
+            sx={{
+              opacity: showSecondImage ? 0 : 1,
+              top: "0",
+              left: 0,
+              right: 0,
+            }}
+          >
+            <img
+              width={"100%"}
+              style={{ objectFit: "cover" }}
+              height={"782px"}
+              src="/psa/psa16.png"
+              alt=""
+            />
+          </FadingImage2>
+          <FadingImage2
+            sx={{
+              opacity: showSecondImage ? 1 : 0,
+              top: "0",
+              left: 0,
+              right: 0,
+            }}
+          >
+            <img
+              width={"100%"}
+              style={{ objectFit: "cover" }}
+              height={"782px"}
+              src="/psa/psa17.png"
+              alt=""
+            />
+          </FadingImage2>
+        </Box>
+
+        <Box position={"absolute"} top={"5040px"} left={"22%"}>
+          <img src="/psa/psa18.png" alt="" />
+        </Box>
+
+        <Box>
+          <Box
+            display={"flex"}
+            justifyContent={"space-evenly"}
+            bgcolor={"#E9E8E3"}
+            pt={8}
+            pb={6}
+          >
+            <Box>
+              <img src="/psa/psa19.png" alt="" />
+            </Box>
+            <Box>
+              <img src="/psa/psa20.png" alt="" />
+            </Box>
+          </Box>
+        </Box>
+
+        <Box display={"flex"}>
+          <Box width={"50%"}>
+            <Box position="relative" mt={12} ml="18%">
+              <FadingImage3
+                sx={{
+                  opacity: currentImage === 0 ? 1 : 0,
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                }}
+              >
+                <img src="/psa/psa22.png" alt="" />
+              </FadingImage3>
+              <FadingImage3
+                sx={{
+                  opacity: currentImage === 1 ? 1 : 0,
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                }}
+              >
+                <img src="/psa/psa23.png" alt="" />
+              </FadingImage3>
+              <FadingImage3
+                sx={{
+                  opacity: currentImage === 2 ? 1 : 0,
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                }}
+              >
+                <img src="/psa/psa24.png" alt="" />
+              </FadingImage3>
+            </Box>
+          </Box>
+          <Box width={"50%"}>
+            <img
+              width={"100%"}
+              style={{ objectFit: "cover" }}
+              height={"782px"}
+              src="psa/psa21.png"
+              alt=""
+            />
+          </Box>
+        </Box>
+
+        <Box mt={-1}>
           <img
-            width={"100%"}
             style={{ objectFit: "cover" }}
-            height={"782px"}
-            src="psa/psa21.png"
+            height={"856px"}
+            width={"100%"}
+            src="/psa/psa1.png"
             alt=""
           />
         </Box>
-      </Box>
+        <Box position={"absolute"} top={"7902px"} left={"172px"}>
+          <img src="psa/psa37.png" alt="" />
+        </Box>
 
-      <Box mt={-1}>
-        <img
-          style={{ objectFit: "cover" }}
-          height={"856px"}
-          width={"100%"}
-          src="/psa/psa1.png"
-          alt=""
-        />
-      </Box>
-      <Box position={"absolute"} top={"7902px"} left={"172px"}>
-        <img src="psa/psa37.png" alt="" />
-      </Box>
+        <ScrollableImageContainer1>
+          <img
+            width={"396px"}
+            height={"574px"}
+            style={{ objectFit: "cover" }}
+            src="/psa/psa26.png"
+            alt=""
+          />
+        </ScrollableImageContainer1>
 
-      <ScrollableImageContainer1>
-        <img
-          width={"396px"}
-          height={"574px"}
-          style={{ objectFit: "cover" }}
-          src="/psa/psa26.png"
-          alt=""
-        />
-      </ScrollableImageContainer1>
-
-      <Box mt={-1}>
-        <img
-          style={{ objectFit: "cover" }}
-          height={"782px"}
-          width={"100%"}
-          src="psa/psa27.png"
-          alt="foto de auto honda"
-        />
-      </Box>
-
-      <Box mt={-4} position="relative" height="782px">
-        <FadingImage4
-          sx={{ opacity: showSecondImage ? 0 : 1, top: "0", left: 0, right: 0 }}
-        >
+        <Box mt={-1}>
           <img
             style={{ objectFit: "cover" }}
             height={"782px"}
             width={"100%"}
-            src="/psa/psa29.png"
-            alt=""
+            src="psa/psa27.png"
+            alt="foto de auto honda"
           />
-        </FadingImage4>
-        <FadingImage4
-          sx={{ opacity: showSecondImage ? 1 : 0, top: "0", left: 0, right: 0 }}
-        >
+        </Box>
+
+        <Box mt={-4} position="relative" height="782px">
+          <FadingImage4
+            sx={{
+              opacity: showSecondImage ? 0 : 1,
+              top: "0",
+              left: 0,
+              right: 0,
+            }}
+          >
+            <img
+              style={{ objectFit: "cover" }}
+              height={"782px"}
+              width={"100%"}
+              src="/psa/psa29.png"
+              alt=""
+            />
+          </FadingImage4>
+          <FadingImage4
+            sx={{
+              opacity: showSecondImage ? 1 : 0,
+              top: "0",
+              left: 0,
+              right: 0,
+            }}
+          >
+            <img
+              style={{ objectFit: "cover" }}
+              height={"782px"}
+              width={"100%"}
+              src="/psa/psa28.png"
+              alt=""
+            />
+          </FadingImage4>
+        </Box>
+
+        <Box>
+          <FadingImage5
+            sx={{
+              opacity: showSecondImage ? 0 : 1,
+              top: "9350px",
+              left: "35%",
+              right: 0,
+            }}
+          >
+            <img src="/psa/psa30.png" alt="" />
+          </FadingImage5>
+          <FadingImage5
+            sx={{
+              opacity: showSecondImage ? 1 : 0,
+              top: "9350px",
+              left: "35%",
+              right: 0,
+            }}
+          >
+            <img src="/psa/psa31.png" alt="" />
+          </FadingImage5>
+        </Box>
+        <Box>
           <img
             style={{ objectFit: "cover" }}
-            height={"782px"}
+            height={"856px"}
             width={"100%"}
-            src="/psa/psa28.png"
-            alt=""
+            src="psa/psa32.png"
+            alt="foto de auto honda"
           />
-        </FadingImage4>
-      </Box>
-
-      <Box>
-        <FadingImage5
-          sx={{
-            opacity: showSecondImage ? 0 : 1,
-            top: "9350px",
-            left: "35%",
-            right: 0,
-          }}
-        >
-          <img src="/psa/psa30.png" alt="" />
-        </FadingImage5>
-        <FadingImage5
-          sx={{
-            opacity: showSecondImage ? 1 : 0,
-            top: "9350px",
-            left: "35%",
-            right: 0,
-          }}
-        >
-          <img src="/psa/psa31.png" alt="" />
-        </FadingImage5>
-      </Box>
-      <Box>
-        <img
-          style={{ objectFit: "cover" }}
-          height={"856px"}
-          width={"100%"}
-          src="psa/psa32.png"
-          alt="foto de auto honda"
-        />
-      </Box>
-      <Box>
-        <FadingImage6
-          sx={{
-            opacity: showSecondImage ? 0 : 1,
-            top: "10196px",
-            left: "4%",
-            right: 0,
-          }}
-        >
-          <img src="/psa/psa34.png" alt="" />
-        </FadingImage6>
-        <FadingImage6
-          sx={{
-            opacity: showSecondImage ? 1 : 0,
-            top: "10196px",
-            left: "4%",
-            right: 0,
-          }}
-        >
-          <img src="/psa/psa35.png" alt="" />
-        </FadingImage6>
-        {/* <FadingImage6
+        </Box>
+        <Box>
+          <FadingImage6
+            sx={{
+              opacity: showSecondImage ? 0 : 1,
+              top: "10196px",
+              left: "4%",
+              right: 0,
+            }}
+          >
+            <img src="/psa/psa34.png" alt="" />
+          </FadingImage6>
+          <FadingImage6
+            sx={{
+              opacity: showSecondImage ? 1 : 0,
+              top: "10196px",
+              left: "4%",
+              right: 0,
+            }}
+          >
+            <img src="/psa/psa35.png" alt="" />
+          </FadingImage6>
+          {/* <FadingImage6
           sx={{
             opacity: showSecondImage ? 2 : 1,
             top: "10256px",
@@ -537,7 +558,8 @@ const PSA = () => {
         >
           <img src="/psa/psa36.png" alt="" />
         </FadingImage6> */}
-      </Box>
+        </Box>
+      </Hidden>
     </>
   );
 };

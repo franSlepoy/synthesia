@@ -197,7 +197,7 @@ const DrayTek = () => {
           background: "linear-gradient(225deg, #738DE5 0%, #202B61 100%)",
         }}
       >
-        <Box zIndex={1200}  pt={14} ml={"258px"}>
+        <Box position={"absolute"} zIndex={1200}  pt={14} ml={"258px"}>
           <img height={"620px"} src="/drayTek/drayTek3.png" alt="computadora" />
         </Box>
 

@@ -6,6 +6,12 @@ const Proyectos = () => {
       <Box>
         <Typography>Proyectos </Typography>
       </Box>
+      <Box component={Link} to="/PSA">
+        <Typography>PSA Peugeot Citroën</Typography>
+      </Box>
+      <Box component={Link} to="/Franca">
+        <Typography>Franca</Typography>
+      </Box>
       <Box component={Link} to="/IMB">
         <Typography>IMB</Typography>
       </Box>

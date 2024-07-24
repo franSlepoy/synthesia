@@ -9,6 +9,7 @@ import Tn from "./components/pages/projectos/Tn";
 import ObrasPublicas from "./components/pages/projectos/ObrasPublicas";
 import PSA from "./components/pages/projectos/PSA";
 import DrayTek from "./components/pages/projectos/DrayTek";
+import Franca from "./components/pages/projectos/Franca";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
           <Route path="/MinisterioDeObrasPublicas" element={<ObrasPublicas />} />
           <Route path="/PSA" element={<PSA/>} />
           <Route path="/DrayTek" element={<DrayTek/>} />
+          <Route path="/Franca" element={<Franca/>} />
         </Routes>
       </BrowserRouter>
     </div>
