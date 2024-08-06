@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Hidden, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 import { useEffect, useState } from "react";
 
@@ -84,142 +84,152 @@ const DrayTek = () => {
 
   return (
     <>
-      <Box display={"flex"} justifyContent={"right"}>
-        <img
-          style={{ borderRadius: "20%", objectFit: "cover" }}
-          height={"696px"}
-          src="drayTek/drayTek.png"
-          alt="drayTek"
-        />
-      </Box>
-
-      <Box position={"absolute"} top={"345px"} left={"16%"}>
-        <FloatingImage src="/drayTek/drayTek1.png" alt="drayTek" />
-      </Box>
-
-      <Box position={"absolute"} top={"310px"} left={"8%"}>
-        <FloatingImage src="/drayTek/drayTek2.png" alt="honda" />
-      </Box>
-
-      <Box
-        pt={5}
-        mt={-1}
-        sx={{
-          backgroundColor: "#ED1C24",
-          display: "flex",
-          width: "100%",
-          height: "102px",
-          justifyContent: "space-around",
-        }}
-      >
-        <Box>
-          <Typography
-            sx={{
-              fontFamily: "Inter",
-              fontWeight: "400",
-              fontSize: "18px",
-              lineHeight: "21.78px",
-              color: "#FFFFFF",
-            }}
-          >
-            Cliente: <strong> Draytek</strong>
-          </Typography>
+      <Hidden lgDown>
+        <Box display={"flex"} justifyContent={"right"}>
+          <img
+            style={{ borderRadius: "20%", objectFit: "cover" }}
+            height={"696px"}
+            src="drayTek/drayTek.png"
+            alt="drayTek"
+          />
         </Box>
-        <Box width={"220px"}>
-          <Typography
-            sx={{
-              fontFamily: "Inter",
-              fontWeight: "400",
-              fontSize: "18px",
-              lineHeight: "21.78px",
-              color: "#FFFFFF",
-            }}
-          >
-            Proyecto: <strong>Página web</strong>
-          </Typography>
-        </Box>
-        <Box>
-          <Typography
-            sx={{
-              fontFamily: "Inter",
-              fontWeight: "400",
-              fontSize: "18px",
-              lineHeight: "21.78px",
-              color: "#FFFFFF",
-            }}
-          >
-            Año: <strong>2024</strong>
-          </Typography>
-        </Box>
-      </Box>
-      <Box height={"720px"}>
-        <Box mt={4} ml={"258px"}>
-          <img height={"620px"} src="/drayTek/drayTek3.png" alt="computadora" />
-        </Box>
-      </Box>
-      <ScrollableImageContainer>
-        <img width={"100%"} src="/drayTek/drayTek4.png" alt="" />
-      </ScrollableImageContainer>
 
-      <Box position={"absolute"} top={"900px"} left={"70%"}>
-        <FloatingImage src="/drayTek/drayTek5.png" alt="honda" />
-      </Box>
-      <Box position={"absolute"} top={"880px"} left={"5%"}>
-        <FloatingImage src="/drayTek/drayTek6.png" alt="honda" />
-      </Box>
-      <Box position={"absolute"} top={"1300px"} left={"5%"}>
-        <FloatingImage src="/drayTek/drayTek7.png" alt="honda" />
-      </Box>
-
-      <Box>
-        <Box position={"absolute"} mt={25} zIndex={10}>
-          <img src="/drayTek/drayTek9.png" alt="" />
+        <Box position={"absolute"} top={"345px"} left={"16%"}>
+          <FloatingImage src="/drayTek/drayTek1.png" alt="drayTek" />
         </Box>
+
+        <Box position={"absolute"} top={"310px"} left={"8%"}>
+          <FloatingImage src="/drayTek/drayTek2.png" alt="honda" />
+        </Box>
+
         <Box
-          position={"absolute"}
-          mt={5}
-          zIndex={0}
-          top={"1500px"}
-          left={"38%"}
+          pt={5}
+          mt={-1}
+          sx={{
+            backgroundColor: "#ED1C24",
+            display: "flex",
+            width: "100%",
+            height: "102px",
+            justifyContent: "space-around",
+          }}
         >
-          <img src="/drayTek/drayTek8.png" alt="" />
+          <Box>
+            <Typography
+              sx={{
+                fontFamily: "Inter",
+                fontWeight: "400",
+                fontSize: "18px",
+                lineHeight: "21.78px",
+                color: "#FFFFFF",
+              }}
+            >
+              Cliente: <strong> Draytek</strong>
+            </Typography>
+          </Box>
+          <Box width={"220px"}>
+            <Typography
+              sx={{
+                fontFamily: "Inter",
+                fontWeight: "400",
+                fontSize: "18px",
+                lineHeight: "21.78px",
+                color: "#FFFFFF",
+              }}
+            >
+              Proyecto: <strong>Página web</strong>
+            </Typography>
+          </Box>
+          <Box>
+            <Typography
+              sx={{
+                fontFamily: "Inter",
+                fontWeight: "400",
+                fontSize: "18px",
+                lineHeight: "21.78px",
+                color: "#FFFFFF",
+              }}
+            >
+              Año: <strong>2024</strong>
+            </Typography>
+          </Box>
         </Box>
-      </Box>
-      <Box ml={22}>
-        <FloatingImage src="/drayTek/drayTek10.png" alt="drayTek" />
-      </Box>
+        <Box height={"720px"}>
+          <Box mt={4} ml={"258px"}>
+            <img
+              height={"620px"}
+              src="/drayTek/drayTek3.png"
+              alt="computadora"
+            />
+          </Box>
+        </Box>
+        <ScrollableImageContainer>
+          <img width={"100%"} src="/drayTek/drayTek4.png" alt="" />
+        </ScrollableImageContainer>
 
-      <Box
-        width={"100%"}
-        height={"845px"}
-        mt={125}
-        sx={{
-          background: "linear-gradient(225deg, #738DE5 0%, #202B61 100%)",
-        }}
-      >
-        <Box position={"absolute"} zIndex={1200}  pt={14} ml={"258px"}>
-          <img height={"620px"} src="/drayTek/drayTek3.png" alt="computadora" />
+        <Box position={"absolute"} top={"900px"} left={"70%"}>
+          <FloatingImage src="/drayTek/drayTek5.png" alt="honda" />
+        </Box>
+        <Box position={"absolute"} top={"880px"} left={"5%"}>
+          <FloatingImage src="/drayTek/drayTek6.png" alt="honda" />
+        </Box>
+        <Box position={"absolute"} top={"1300px"} left={"5%"}>
+          <FloatingImage src="/drayTek/drayTek7.png" alt="honda" />
         </Box>
 
-        {/*  <Box >
+        <Box>
+          <Box position={"absolute"} mt={25} zIndex={10}>
+            <img src="/drayTek/drayTek9.png" alt="" />
+          </Box>
+          <Box
+            position={"absolute"}
+            mt={5}
+            zIndex={0}
+            top={"1500px"}
+            left={"38%"}
+          >
+            <img src="/drayTek/drayTek8.png" alt="" />
+          </Box>
+        </Box>
+        <Box ml={22}>
+          <FloatingImage src="/drayTek/drayTek10.png" alt="drayTek" />
+        </Box>
+
+        <Box
+          width={"100%"}
+          height={"845px"}
+          mt={125}
+          sx={{
+            background: "linear-gradient(225deg, #738DE5 0%, #202B61 100%)",
+          }}
+        >
+          <Box position={"absolute"} zIndex={1200} pt={14} ml={"60%"}>
+            <img
+              height={"620px"}
+              src="/drayTek/drayTek3.png"
+              alt="computadora"
+            />
+          </Box>
+
+          {/*  <Box >
             <img src="drayTek/drayTek13.png" alt="" />
         </Box>
         <Box >
             <img src="drayTek/drayTek14.png" alt="" />
         </Box> */}
-      </Box>
-      <Box position={"absolute"} zIndex={100} top={"3200px"} left={"2%"}>
-        <FloatingImage src="drayTek/drayTek12.png" alt="12" />
-      </Box>
-      <Box position={"absolute"} zIndex={100} top={"2800px"} left={"2%"}>
-        <FloatingImage src="drayTek/drayTek13.png" alt="13" />
-      </Box>
-      <Box position={"absolute"} zIndex={100} top={"2700px"} left={"40%"}>
-        <FloatingImage src="drayTek/drayTek14.png" alt="14" />
-      </Box>
-      <Box position={"absolute"} zIndex={100} top={"2900px"} left={"80%"}>
-        <FloatingImage src="drayTek/drayTek15.png" alt="15" />
-      </Box>
+        </Box>
+        <Box position={"absolute"} zIndex={100} top={"3200px"} left={"2%"}>
+          <FloatingImage src="drayTek/drayTek12.png" alt="12" />
+        </Box>
+        <Box position={"absolute"} zIndex={100} top={"2800px"} left={"2%"}>
+          <FloatingImage src="drayTek/drayTek13.png" alt="13" />
+        </Box>
+        <Box position={"absolute"} zIndex={100} top={"2700px"} left={"40%"}>
+          <FloatingImage src="drayTek/drayTek14.png" alt="14" />
+        </Box>
+        <Box position={"absolute"} zIndex={100} top={"2900px"} left={"80%"}>
+          <FloatingImage src="drayTek/drayTek15.png" alt="15" />
+        </Box>
+      </Hidden>
     </>
   );
 };

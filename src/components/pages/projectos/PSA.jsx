@@ -153,7 +153,7 @@ const PSA = () => {
 
   return (
     <>
-      <Hidden lgDown>
+      <Hidden >
         <Box>
           <img
             style={{ objectFit: "cover" }}
@@ -222,11 +222,11 @@ const PSA = () => {
             height={"856px"}
             width={"100%"}
             src="/psa/psa1.png"
-            alt=""
+            alt="foto de auto"
           />
         </Box>
         <Box position={"absolute"} top={"1042px"} left={"172px"}>
-          <img src="psa/psa37.png" alt="" />
+          <img src="psa/psa37.png" alt="computadora" />
         </Box>
 
         <ScrollableImageContainer>
@@ -235,7 +235,7 @@ const PSA = () => {
             height={"573px"}
             style={{ objectFit: "cover" }}
             src="/psa/psa2.png"
-            alt=""
+            alt="diseño de comunicación"
           />
         </ScrollableImageContainer>
 
@@ -251,7 +251,7 @@ const PSA = () => {
                 bgcolor: imageSets[imageIndices[index]][index].bgColor,
               }}
             >
-              <img src={imageSets[imageIndices[index]][index].src} alt="" />
+              <img src={imageSets[imageIndices[index]][index].src} alt="carrusel de imágenes" />
             </Box>
           ))}
         </Box>
@@ -278,7 +278,7 @@ const PSA = () => {
             height={"856px"}
             width={"100%"}
             src="/psa/psa12.png"
-            alt=""
+            alt="públicidad de seguridad vial"
           />
         </Box>
 
@@ -289,7 +289,7 @@ const PSA = () => {
               style={{ objectFit: "cover" }}
               height={"782px"}
               src="/psa/psa13.png"
-              alt=""
+              alt="compu"
             />
           </Box>
           <Box width={"50%"} height={"782px"} /* bgcolor={"#92D9F9"} */>
@@ -301,11 +301,11 @@ const PSA = () => {
               }}
             >
               <img
-                width={"103%"}
+                width={"100%"}
                 style={{ objectFit: "cover" }}
                 height={"782px"}
                 src="/psa/psa14.png"
-                alt="PSA revista"
+                alt="seguridad vial amarillo"
               />
             </FadingImage1>
             <FadingImage1
@@ -316,11 +316,11 @@ const PSA = () => {
               }}
             >
               <img
-                width={"103%"}
-                style={{ objectFit: "cover" }}
+                width={"100%"}
+               
                 height={"782px"}
                 src="/psa/psa15.png"
-                alt="PSA revista"
+                alt="seguridad vial celeste"
               />
             </FadingImage1>
           </Box>

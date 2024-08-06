@@ -4,95 +4,79 @@ import { useEffect, useState } from "react";
 
 const ScrollableImageContainer = styled(Box)`
   position: absolute;
-  top: 1074px;
-  left: 382px;
-  width: 686px;
+  top: 1062px;
+  left: 50%;
+  transform: translateX(-50%);
+  /*  left: 382px;  */
+  /*  left: 26.5%;  */
+  width: 684px;
   height: 418px;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 
   &::-webkit-scrollbar {
-    width: 10px;
+    width: 7px;
   }
 
   &::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #ffffff;
     border-radius: 10px;
   }
 
   &::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #dbd9d9;
     border-radius: 10px;
   }
 
   &::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: #969393;
   }
 `;
 
 const ScrollableImageContainer1 = styled(Box)`
   position: absolute;
-  top: 1862px;
-  left: 564px;
-  width: 336px;
-  height: 630px;
+  top: 1962px;
+  /* left: 525px; */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 374px;
+  height: 486px;
+
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 
   &::-webkit-scrollbar {
-    width: 10px;
+    width: 7px;
   }
 
   &::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #ffffff;
     border-radius: 10px;
   }
 
   &::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #dbd9d9;
     border-radius: 10px;
   }
 
   &::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: #969393;
   }
-`;
-const FadingImage = styled(Box)`
-  transition: opacity 0.5s ease-in-out;
-`;
-
-const FadingImage1 = styled(Box)`
-  transition: opacity 0.5s ease-in-out;
-`;
-
-const FadingImage2 = styled(Box)`
-  position: absolute;
-  transition: opacity 0.5s ease-in-out;
-`;
-
-const FadingImage3 = styled(Box)`
-  transition: opacity 0.5s ease-in-out;
-`;
-const FadingImage4 = styled(Box)`
-  position: absolute;
-  transition: opacity 0.5s ease-in-out;
 `;
 
 const Franca = () => {
   const [imageIndices, setImageIndices] = useState([0, 0, 0]);
-  const [showSecondImage, setShowSecondImage] = useState(false);
-  const [currentImage, setCurrentImage] = useState(0);
 
   const imageSets = [
     [
-      { src: "psa/psa3.png", bgColor: "#F04F50" },
-      { src: "psa/psa4.png", bgColor: "#E9E8E3" },
-      { src: "psa/psa5.png", bgColor: "white" },
+      { src: "franca/franca11.png" },
+      { src: "franca/franca12.png" },
+      { src: "franca/franca13.png" },
     ],
     [
-      { src: "psa/psa6.png", bgColor: "#E9E8E3" },
-      { src: "psa/psa7.png", bgColor: "#F04F50" },
-      { src: "psa/psa8.png", bgColor: "#2F5183" },
+      { src: "franca/franca14.png" },
+      { src: "franca/franca15.png" },
+      { src: "franca/franca16.png" },
     ],
   ];
 
@@ -122,22 +106,6 @@ const Franca = () => {
     ];
 
     return () => intervals.forEach(clearInterval);
-  }, []);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setShowSecondImage((prev) => !prev);
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, []);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImage((prev) => (prev + 1) % 3);
-    }, 3000);
-
-    return () => clearInterval(interval);
   }, []);
 
   return (
@@ -177,7 +145,7 @@ const Franca = () => {
               Cliente: <strong>Franca</strong>
             </Typography>
           </Box>
-          <Box width={"400px"}>
+          <Box ml={8} width={"300px"}>
             <Typography
               sx={{
                 fontFamily: "Inter",
@@ -187,7 +155,7 @@ const Franca = () => {
                 color: "black",
               }}
             >
-              Proyecto: <strong>Web app e-commerce</strong>
+              Proyecto: <strong>E-Commerce</strong>
             </Typography>
           </Box>
           <Box>
@@ -215,29 +183,53 @@ const Franca = () => {
           />
         </Box>
 
-        <Box position={"absolute"} top={"942px"} left={"208px"}>
+        <Box
+          position={"absolute"}
+          top={"942px"}
+          sx={{ left: "50%", transform: "translateX(-50%)" }}
+        >
           <img src="franca/franca2.png" alt="computadora" />
         </Box>
 
         <ScrollableImageContainer>
           <img
-            width={"676px"}
+            width={"677px"}
             style={{ objectFit: "cover" }}
-            src="/franca/franca9.png"
-            alt="imágen de home de pagina"
+            src="franca/franca9.png"
+            alt="imagen de home de pagina"
           />
         </ScrollableImageContainer>
 
-        <Box position={"absolute"} top={"1752px"} left={"22px"}>
+        <Box
+          position={"absolute"}
+          top={"1792px"}
+          sx={{ left: "50%", transform: "translateX(-50%)" }}
+        >
           <img
+           
+            height={"760px"}
+            style={{ objectFit: "cover" }}
             src="franca/franca3.png"
             alt="celulares con imágeneás de la web mobile"
+          />
+        </Box>
+        <Box
+          position={"absolute"}
+          top={"1692px"}
+          sx={{ left: "50%", transform: "translateX(-50%)" }}
+        >
+          <img
+            width={"100%"}
+            height={"938px"}
+            style={{ objectFit: "cover" }}
+            src="franca/franca10.png"
+            alt="celular del medio"
           />
         </Box>
 
         <ScrollableImageContainer1>
           <img
-            width={"326px"}
+            width={"367px"}
             style={{ objectFit: "cover" }}
             src="/franca/franca8.png"
             alt="web mobile"
@@ -252,16 +244,27 @@ const Franca = () => {
             background: "linear-gradient(225deg, #528E87 0%, #172826 100%)",
           }}
         >
-          <FadingImage
-            sx={{ ml: "8%", pt: "115px", opacity: showSecondImage ? 0 : 1 }}
-          >
-            <img src="/franca/franca4.png" alt="PSA revista" />
-          </FadingImage>
-          <FadingImage
-            sx={{ ml: "8%", mt: "-515px", opacity: showSecondImage ? 1 : 0 }}
-          >
-            <img src="/franca/franca5.png" alt="PSA revista" />
-          </FadingImage>
+          <Box display={"flex"}>
+            {[0, 1, 2].map((index) => (
+              <Box
+                key={index}
+                sx={{
+                  textAlign: "center",
+                  pt: 14,
+
+                  width: "33.3%",
+                  bgcolor: imageSets[imageIndices[index]][index].bgColor,
+                }}
+              >
+                <img
+                  width={"400px"}
+                  height={"521px"}
+                  src={imageSets[imageIndices[index]][index].src}
+                  alt=""
+                />
+              </Box>
+            ))}
+          </Box>
         </Box>
 
         <Box>
@@ -273,14 +276,22 @@ const Franca = () => {
             alt=""
           />
         </Box>
-        <Box ml={"18%"} mt={"-708px"}>
+        <Box   sx={{
+          position: 'absolute',
+          left: '50%',
+          top:"3500px",
+          transform: 'translateX(-50%)',
+
+          
+        }}>
           <img
+            width={"960px"}
+            height={"646px"}
             style={{ objectFit: "cover" }}
             src="/franca/franca7.png"
             alt=""
           />
         </Box>
-        
       </Hidden>
     </>
   );

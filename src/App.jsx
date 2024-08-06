@@ -10,6 +10,8 @@ import ObrasPublicas from "./components/pages/projectos/ObrasPublicas";
 import PSA from "./components/pages/projectos/PSA";
 import DrayTek from "./components/pages/projectos/DrayTek";
 import Franca from "./components/pages/projectos/Franca";
+import SanMartin from "./components/pages/projectos/SanMartin";
+import SanMartin1 from "./components/pages/projectos/SanMartin1";
 
 const App = () => {
   return (
@@ -26,6 +28,8 @@ const App = () => {
           <Route path="/PSA" element={<PSA/>} />
           <Route path="/DrayTek" element={<DrayTek/>} />
           <Route path="/Franca" element={<Franca/>} />
+          <Route path="/SanMartín" element={<SanMartin/>} />
+          <Route path="/SanMartín1" element={<SanMartin1/>} />
         </Routes>
       </BrowserRouter>
     </div>
