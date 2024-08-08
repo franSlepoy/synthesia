@@ -20,15 +20,15 @@ const FloatingImage = styled("img")`
 const ScrollableImageContainer = styled(Box)`
   position: absolute;
 
-  top: 908px;
-  left: 392px;
-  width: 659.9px;
+  /* top: 908px;
+  left: 392px; */
+  width: 660px;
   height: 398.5px;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 
   &::-webkit-scrollbar {
-    width: 10px;
+    width: 7px;
   }
 
   &::-webkit-scrollbar-track {
@@ -85,20 +85,29 @@ const DrayTek = () => {
   return (
     <>
       <Hidden lgDown>
-        <Box display={"flex"} justifyContent={"right"}>
+        <Box>
           <img
-            style={{ borderRadius: "20%", objectFit: "cover" }}
+            width={"100%"}
+            style={{ objectFit: "cover" }}
             height={"696px"}
             src="drayTek/drayTek.png"
             alt="drayTek"
           />
         </Box>
 
-        <Box position={"absolute"} top={"345px"} left={"16%"}>
+        <Box
+          position={"absolute"}
+          top={"345px"}
+          sx={{ left: "25%", transform: "translateX(-50%)" }}
+        >
           <FloatingImage src="/drayTek/drayTek1.png" alt="drayTek" />
         </Box>
 
-        <Box position={"absolute"} top={"310px"} left={"8%"}>
+        <Box
+          position={"absolute"}
+          top={"310px"}
+          sx={{ left: "25%", transform: "translateX(-50%)" }}
+        >
           <FloatingImage src="/drayTek/drayTek2.png" alt="honda" />
         </Box>
 
@@ -154,40 +163,55 @@ const DrayTek = () => {
           </Box>
         </Box>
         <Box height={"720px"}>
-          <Box mt={4} ml={"258px"}>
+          <Box mt={4} textAlign={"center"}>
             <img
+              style={{ objectFit: "cover" }}
               height={"620px"}
               src="/drayTek/drayTek3.png"
               alt="computadora"
             />
           </Box>
         </Box>
-        <ScrollableImageContainer>
-          <img width={"100%"} src="/drayTek/drayTek4.png" alt="" />
+        <ScrollableImageContainer
+          sx={{ top: "908px", left: "50.2%", transform: "translateX(-50%)" }}
+        >
+          <img width={"653px"} src="/drayTek/drayTek4.png" alt="" />
         </ScrollableImageContainer>
 
-        <Box position={"absolute"} top={"900px"} left={"70%"}>
+        <Box
+          position={"absolute"}
+          top={"900px"}
+          sx={{ left: "80.2%", transform: "translateX(-50%)" }}
+        >
           <FloatingImage src="/drayTek/drayTek5.png" alt="honda" />
         </Box>
-        <Box position={"absolute"} top={"880px"} left={"5%"}>
+        <Box
+          position={"absolute"}
+          top={"880px"}
+          sx={{ left: "20.2%", transform: "translateX(-50%)" }}
+        >
           <FloatingImage src="/drayTek/drayTek6.png" alt="honda" />
         </Box>
-        <Box position={"absolute"} top={"1300px"} left={"5%"}>
-          <FloatingImage src="/drayTek/drayTek7.png" alt="honda" />
+        <Box
+          position={"absolute"}
+          top={"1300px"}
+          sx={{ left: "10.2%", transform: "translateX(-50%)" }}
+        >
+          <FloatingImage src="/drayTek/drayTek7.png" alt="" />
         </Box>
 
         <Box>
           <Box position={"absolute"} mt={25} zIndex={10}>
-            <img src="/drayTek/drayTek9.png" alt="" />
+            <img src="/drayTek/drayTek9.png" alt="compuradora" />
           </Box>
           <Box
             position={"absolute"}
             mt={5}
             zIndex={0}
             top={"1500px"}
-            left={"38%"}
+            sx={{ left: "63%", transform: "translateX(-50%)" }}
           >
-            <img src="/drayTek/drayTek8.png" alt="" />
+            <img src="/drayTek/drayTek8.png" alt="pagina detalle de producto" />
           </Box>
         </Box>
         <Box ml={22}>
@@ -202,31 +226,29 @@ const DrayTek = () => {
             background: "linear-gradient(225deg, #738DE5 0%, #202B61 100%)",
           }}
         >
-          <Box position={"absolute"} zIndex={1200} pt={14} ml={"60%"}>
+          <Box
+            position={"absolute"}
+            zIndex={1200}
+            pt={14}
+            sx={{ left: "50%", transform: "translateX(-50%)" }}
+          >
             <img
               height={"620px"}
               src="/drayTek/drayTek3.png"
               alt="computadora"
             />
           </Box>
-
-          {/*  <Box >
-            <img src="drayTek/drayTek13.png" alt="" />
         </Box>
-        <Box >
-            <img src="drayTek/drayTek14.png" alt="" />
-        </Box> */}
-        </Box>
-        <Box position={"absolute"} zIndex={100} top={"3200px"} left={"2%"}>
+        <Box position={"absolute"} zIndex={100} top={"3200px"}  sx={{ left: "10%", transform: "translateX(-50%)" }}>
           <FloatingImage src="drayTek/drayTek12.png" alt="12" />
         </Box>
-        <Box position={"absolute"} zIndex={100} top={"2800px"} left={"2%"}>
+        <Box position={"absolute"} zIndex={100} top={"2800px"}  sx={{ left: "10%", transform: "translateX(-50%)" }}>
           <FloatingImage src="drayTek/drayTek13.png" alt="13" />
         </Box>
-        <Box position={"absolute"} zIndex={100} top={"2700px"} left={"40%"}>
+        <Box position={"absolute"} zIndex={100} top={"2700px"}  sx={{ left: "60%", transform: "translateX(-50%)" }}>
           <FloatingImage src="drayTek/drayTek14.png" alt="14" />
         </Box>
-        <Box position={"absolute"} zIndex={100} top={"2900px"} left={"80%"}>
+        <Box position={"absolute"} zIndex={100} top={"2900px"}  sx={{ left: "90%", transform: "translateX(-50%)" }}>
           <FloatingImage src="drayTek/drayTek15.png" alt="15" />
         </Box>
       </Hidden>

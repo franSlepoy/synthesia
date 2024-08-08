@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 
 const FadingImage = styled(Box)`
   position: absolute;
-  top: 1808px;
-  left: 258px;
+  /* top: 1808px;
+  left: 258px; */
   transition: opacity 0.3s ease-in-out;
 `;
 
@@ -149,6 +149,10 @@ const SanMartin = () => {
           {/* Aquí empieza el carrusel de imágenes */}
           <FadingImage
             sx={{
+              top: "1808px",
+              left: "50%",
+              transform: "translateX(-50%)",
+
               opacity: currentImage === 0 ? 1 : 0,
             }}
           >
@@ -156,6 +160,9 @@ const SanMartin = () => {
           </FadingImage>
           <FadingImage
             sx={{
+              top: "1808px",
+              left: "50%",
+              transform: "translateX(-50%)",
               opacity: currentImage === 1 ? 1 : 0,
             }}
           >
@@ -163,6 +170,9 @@ const SanMartin = () => {
           </FadingImage>
           <FadingImage
             sx={{
+              top: "1808px",
+              left: "50%",
+              transform: "translateX(-50%)",
               opacity: currentImage === 2 ? 1 : 0,
             }}
           >
@@ -170,6 +180,9 @@ const SanMartin = () => {
           </FadingImage>
           <FadingImage
             sx={{
+              top: "1808px",
+              left: "50%",
+              transform: "translateX(-50%)",
               opacity: currentImage === 3 ? 1 : 0,
             }}
           >
@@ -180,12 +193,11 @@ const SanMartin = () => {
         <Box
           mt={-1}
           width={"100%"}
-          height={"870px"}
           sx={{
             background: "linear-gradient(225deg, #E3E3E1 0%, #E4E0D4 100%)",
           }}
         >
-          <Box display={"flex"}>
+          <Box display={"flex"} justifyContent={"space-around"}>
             {[0, 1].map((index) => (
               <Box
                 key={index}
@@ -193,15 +205,18 @@ const SanMartin = () => {
                   textAlign: "center",
                   pt: 16,
 
-                  width: "50%",
                   bgcolor: imageSets[imageIndices[index]][index].bgColor,
                 }}
               >
-                <img src={imageSets[imageIndices[index]][index].src} alt="" />
+                <img
+                  width={"95%"}
+                  src={imageSets[imageIndices[index]][index].src}
+                  alt=""
+                />
               </Box>
             ))}
           </Box>
-          <Box display={"flex"}>
+          <Box display={"flex"} justifyContent={"space-around"}>
             {[0, 1].map((index) => (
               <Box
                 key={index}
@@ -209,11 +224,14 @@ const SanMartin = () => {
                   textAlign: "center",
                   pt: 4,
 
-                  width: "50%",
                   bgcolor: imageSets1[imageIndices[index]][index].bgColor,
                 }}
               >
-                <img src={imageSets1[imageIndices[index]][index].src} alt="" />
+                <img
+                  width={"95%"}
+                  src={imageSets1[imageIndices[index]][index].src}
+                  alt=""
+                />
               </Box>
             ))}
           </Box>

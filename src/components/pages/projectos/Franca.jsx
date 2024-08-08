@@ -203,11 +203,11 @@ const Franca = () => {
         <Box
           position={"absolute"}
           top={"1792px"}
-          sx={{ left: "50%", transform: "translateX(-50%)" }}
+          sx={{  left: "50%", transform: "translateX(-50%)" }}
         >
           <img
-           
-            height={"760px"}
+            
+            height={"680px"}
             style={{ objectFit: "cover" }}
             src="franca/franca3.png"
             alt="celulares con imágeneás de la web mobile"
@@ -244,15 +244,15 @@ const Franca = () => {
             background: "linear-gradient(225deg, #528E87 0%, #172826 100%)",
           }}
         >
-          <Box display={"flex"}>
+          <Box m={"auto"} width={"100%"} display={"flex"} flexWrap={"wrap"} justifyContent={"space-evenly"} >
             {[0, 1, 2].map((index) => (
               <Box
                 key={index}
                 sx={{
                   textAlign: "center",
                   pt: 14,
-
-                  width: "33.3%",
+                  
+                
                   bgcolor: imageSets[imageIndices[index]][index].bgColor,
                 }}
               >
@@ -276,14 +276,14 @@ const Franca = () => {
             alt=""
           />
         </Box>
-        <Box   sx={{
-          position: 'absolute',
-          left: '50%',
-          top:"3500px",
-          transform: 'translateX(-50%)',
-
-          
-        }}>
+        <Box
+          sx={{
+            position: "absolute",
+            left: "50%",
+            top: "3500px",
+            transform: "translateX(-50%)",
+          }}
+        >
           <img
             width={"960px"}
             height={"646px"}
