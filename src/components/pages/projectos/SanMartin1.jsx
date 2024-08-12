@@ -198,7 +198,7 @@ const SanMartin1 = () => {
               width={"100%"}
               height={"870px"}
               style={{ objectFit: "cover" }}
-              src="sanMartin1/sanMartin1-7.png"
+              src="sanMartin1/sanMartin1-8.png"
               alt=""
             />
           </FadingImage>
@@ -212,7 +212,7 @@ const SanMartin1 = () => {
               width={"100%"}
               height={"870px"}
               style={{ objectFit: "cover" }}
-              src="sanMartin1/sanMartin1-8.png"
+              src="sanMartin1/sanMartin1-9.png"
               alt=""
             />
           </FadingImage>

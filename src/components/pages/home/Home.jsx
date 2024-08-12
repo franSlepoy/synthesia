@@ -11,7 +11,7 @@ const Home = () => {
         <Link to={"/proyectos"}>Proyectos</Link>
       </Box>
 
-      <EscenaTextos />
+      <EscenaTextos/>
     </>
   );
 };

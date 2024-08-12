@@ -37,6 +37,9 @@ const Proyectos = () => {
       <Box component={Link} to="/SanMartín1">
         <Typography>Municipalidad de San Martín 1</Typography>
       </Box>
+      <Box component={Link} to="/Tyme">
+        <Typography>Tyme</Typography>
+      </Box>
 
      
 

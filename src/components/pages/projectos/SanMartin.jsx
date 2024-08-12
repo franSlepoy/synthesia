@@ -156,7 +156,7 @@ const SanMartin = () => {
               opacity: currentImage === 0 ? 1 : 0,
             }}
           >
-            <img src="sanMartin/sanMartin3.png" alt="" />
+            <img width={"900px"} src="sanMartin/sanMartin3.png" alt="" />
           </FadingImage>
           <FadingImage
             sx={{
@@ -166,7 +166,7 @@ const SanMartin = () => {
               opacity: currentImage === 1 ? 1 : 0,
             }}
           >
-            <img src="sanMartin/sanMartin4.png" alt="" />
+            <img width={"900px"} src="sanMartin/sanMartin4.png" alt="" />
           </FadingImage>
           <FadingImage
             sx={{
@@ -176,7 +176,7 @@ const SanMartin = () => {
               opacity: currentImage === 2 ? 1 : 0,
             }}
           >
-            <img src="sanMartin/sanMartin5.png" alt="" />
+            <img width={"900px"} src="sanMartin/sanMartin5.png" alt="" />
           </FadingImage>
           <FadingImage
             sx={{
@@ -186,7 +186,7 @@ const SanMartin = () => {
               opacity: currentImage === 3 ? 1 : 0,
             }}
           >
-            <img src="sanMartin/sanMartin6.png" alt="" />
+            <img width={"900px"} src="sanMartin/sanMartin6.png" alt="" />
           </FadingImage>
         </Box>
 
@@ -209,7 +209,7 @@ const SanMartin = () => {
                 }}
               >
                 <img
-                  width={"95%"}
+                  width={"600px"}
                   src={imageSets[imageIndices[index]][index].src}
                   alt=""
                 />
@@ -228,7 +228,7 @@ const SanMartin = () => {
                 }}
               >
                 <img
-                  width={"95%"}
+                  width={"600px"}
                   src={imageSets1[imageIndices[index]][index].src}
                   alt=""
                 />

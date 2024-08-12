@@ -234,8 +234,10 @@ const PSA = () => {
           sx={{ left: "20%", transform: "translateX(-29%)" }}
         >
           <img
+            width={"568px"}
+            height={"384px"}
             style={{ objectFit: "cover" }}
-            src="psa/psa37.png"
+            src="psa/psa38.png"
             alt="computadora"
           />
         </Box>
@@ -447,7 +449,12 @@ const PSA = () => {
                   transform: "translateX(-50%)",
                 }}
               >
-                <img src="/psa/psa22.png" alt="tapa de revista en carrusel" />
+                <img
+                  width={"382px"}
+                  height={"516px"}
+                  src="/psa/psa22.png"
+                  alt="tapa de revista en carrusel"
+                />
               </FadingImage3>
               <FadingImage3
                 sx={{
@@ -458,7 +465,12 @@ const PSA = () => {
                   transform: "translateX(-50%)",
                 }}
               >
-                <img src="/psa/psa23.png" alt="tapa de revista en carrusel" />
+                <img
+                  width={"382px"}
+                  height={"516px"}
+                  src="/psa/psa23.png"
+                  alt="tapa de revista en carrusel"
+                />
               </FadingImage3>
               <FadingImage3
                 sx={{
@@ -469,7 +481,12 @@ const PSA = () => {
                   transform: "translateX(-50%)",
                 }}
               >
-                <img src="/psa/psa24.png" alt="tapa de revista en carrusel" />
+                <img
+                  width={"382px"}
+                  height={"516px"}
+                  src="/psa/psa24.png"
+                  alt="tapa de revista en carrusel"
+                />
               </FadingImage3>
             </Box>
           </Box>
@@ -500,9 +517,10 @@ const PSA = () => {
           sx={{ left: "32%", transform: "translateX(-50%)" }}
         >
           <img
-            width={"100%"}
+          width={"568px"}
+          height={"384px"}
             style={{ objectFit: "cover" }}
-            src="psa/psa37.png"
+            src="psa/psa38.png"
             alt="computadora"
           />
         </Box>
@@ -575,7 +593,8 @@ const PSA = () => {
             }}
           >
             <img
-              width={"600px"}
+              width={"354px"}
+              height={"567px"}
               src="/psa/psa30.png"
               alt="imagen de fondo, autos"
             />
@@ -588,7 +607,7 @@ const PSA = () => {
               transform: "translateX(-50%)",
             }}
           >
-            <img width={"600px"} src="/psa/psa31.png" alt="" />
+            <img width={"354px"} height={"567px"} src="/psa/psa31.png" alt="" />
           </FadingImage5>
         </Box>
         <Box>
@@ -609,7 +628,7 @@ const PSA = () => {
               transform: "translateX(-50%)",
             }}
           >
-            <img src="/psa/psa34.png" alt="" />
+            <img width={"423px"} height={"598px"} src="/psa/psa34.png" alt="" />
           </FadingImage6>
           <FadingImage6
             sx={{
@@ -619,7 +638,7 @@ const PSA = () => {
               transform: "translateX(-50%)",
             }}
           >
-            <img src="/psa/psa35.png" alt="" />
+            <img width={"423px"} height={"598px"} src="/psa/psa35.png" alt="" />
           </FadingImage6>
         </Box>
       </Hidden>
@@ -695,14 +714,17 @@ const PSA = () => {
             alt="foto de auto"
           />
         </Box>
+
         <Box
           position={"absolute"}
-          top={"1042px"}
+          top={"1038px"}
           sx={{ left: "20%", transform: "translateX(-29%)" }}
         >
           <img
+            width={"568px"}
+            height={"384px"}
             style={{ objectFit: "cover" }}
-            src="psa/psa37.png"
+            src="psa/psa38.png"
             alt="computadora"
           />
         </Box>
@@ -913,7 +935,12 @@ const PSA = () => {
                   transform: "translateX(-50%)",
                 }}
               >
-                <img src="/psa/psa22.png" alt="tapa de revista en carrusel" />
+                <img
+                  width={"382px"}
+                  height={"516px"}
+                  src="/psa/psa22.png"
+                  alt="tapa de revista en carrusel"
+                />
               </FadingImage3>
               <FadingImage3
                 sx={{
@@ -924,7 +951,12 @@ const PSA = () => {
                   transform: "translateX(-50%)",
                 }}
               >
-                <img src="/psa/psa23.png" alt="tapa de revista en carrusel" />
+                <img
+                  width={"382px"}
+                  height={"516px"}
+                  src="/psa/psa23.png"
+                  alt="tapa de revista en carrusel"
+                />
               </FadingImage3>
               <FadingImage3
                 sx={{
@@ -935,7 +967,12 @@ const PSA = () => {
                   transform: "translateX(-50%)",
                 }}
               >
-                <img src="/psa/psa24.png" alt="tapa de revista en carrusel" />
+                <img
+                  width={"382px"}
+                  height={"516px"}
+                  src="/psa/psa24.png"
+                  alt="tapa de revista en carrusel"
+                />
               </FadingImage3>
             </Box>
           </Box>
@@ -966,9 +1003,10 @@ const PSA = () => {
           sx={{ left: "32%", transform: "translateX(-50%)" }}
         >
           <img
-            width={"100%"}
+            width={"568px"}
+            height={"384px"}
             style={{ objectFit: "cover" }}
-            src="psa/psa37.png"
+            src="psa/psa38.png"
             alt="computadora"
           />
         </Box>
@@ -1040,7 +1078,12 @@ const PSA = () => {
               transform: "translateX(-50%)",
             }}
           >
-            <img src="/psa/psa30.png" alt="imagen de fondo, autos" />
+            <img
+              width={"354px"}
+              height={"567px"}
+              src="/psa/psa30.png"
+              alt="imagen de fondo, autos"
+            />
           </FadingImage5>
           <FadingImage5
             sx={{
@@ -1050,7 +1093,7 @@ const PSA = () => {
               transform: "translateX(-50%)",
             }}
           >
-            <img src="/psa/psa31.png" alt="" />
+            <img width={"354px"} height={"567px"} src="/psa/psa31.png" alt="" />
           </FadingImage5>
         </Box>
         <Box>
@@ -1071,7 +1114,7 @@ const PSA = () => {
               transform: "translateX(-50%)",
             }}
           >
-            <img src="/psa/psa34.png" alt="" />
+            <img width={"423px"} height={"598px"} src="/psa/psa34.png" alt="" />
           </FadingImage6>
           <FadingImage6
             sx={{
@@ -1081,7 +1124,7 @@ const PSA = () => {
               transform: "translateX(-50%)",
             }}
           >
-            <img src="/psa/psa35.png" alt="" />
+            <img width={"423px"} height={"567px"} src="/psa/psa35.png" alt="" />
           </FadingImage6>
         </Box>
       </Hidden>

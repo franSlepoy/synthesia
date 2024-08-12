@@ -12,6 +12,7 @@ import DrayTek from "./components/pages/projectos/DrayTek";
 import Franca from "./components/pages/projectos/Franca";
 import SanMartin from "./components/pages/projectos/SanMartin";
 import SanMartin1 from "./components/pages/projectos/SanMartin1";
+import Tyme from "./components/pages/projectos/Tyme";
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
           <Route path="/Franca" element={<Franca/>} />
           <Route path="/SanMartín" element={<SanMartin/>} />
           <Route path="/SanMartín1" element={<SanMartin1/>} />
+          <Route path="/Tyme" element={<Tyme/>} />
         </Routes>
       </BrowserRouter>
     </div>

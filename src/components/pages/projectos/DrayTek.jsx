@@ -98,14 +98,14 @@ const DrayTek = () => {
         <Box
           position={"absolute"}
           top={"345px"}
-          sx={{ left: "25%", transform: "translateX(-50%)" }}
+          sx={{ left: "28%", transform: "translateX(-50%)" }}
         >
           <FloatingImage src="/drayTek/drayTek1.png" alt="drayTek" />
         </Box>
 
         <Box
           position={"absolute"}
-          top={"310px"}
+          top={"350px"}
           sx={{ left: "25%", transform: "translateX(-50%)" }}
         >
           <FloatingImage src="/drayTek/drayTek2.png" alt="honda" />
@@ -202,7 +202,7 @@ const DrayTek = () => {
 
         <Box>
           <Box position={"absolute"} mt={25} zIndex={10}>
-            <img src="/drayTek/drayTek9.png" alt="compuradora" />
+            <img width={"830px"} src="/drayTek/drayTek9.png" alt="compuradora" />
           </Box>
           <Box
             position={"absolute"}
@@ -211,7 +211,7 @@ const DrayTek = () => {
             top={"1500px"}
             sx={{ left: "63%", transform: "translateX(-50%)" }}
           >
-            <img src="/drayTek/drayTek8.png" alt="pagina detalle de producto" />
+            <img width={"823px"} src="/drayTek/drayTek8.png" alt="pagina detalle de producto" />
           </Box>
         </Box>
         <Box ml={22}>
