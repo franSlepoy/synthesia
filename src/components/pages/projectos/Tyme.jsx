@@ -1,7 +1,7 @@
 import { Box, Hidden, Typography } from "@mui/material";
 import { styled, keyframes } from "@mui/system";
 
-/* const typing = keyframes`
+/*  const typing = keyframes`
   0% { width: 0; }
   100% { width: 100%; }
 `;
@@ -15,7 +15,7 @@ const blinkCaret = keyframes`
 const AnimatedText = styled(Box)`
   display: inline-block;
   overflow: hidden;
-  border-right: 0px solid black;
+  border-right: 2px solid black;
   white-space: nowrap;
   animation: ${typing} 4s steps(30, end), ${blinkCaret} 0.5s step-end infinite;
 `;
@@ -58,6 +58,38 @@ const ScrollableImageContainer = styled(Box)`
     background: #969393;
   }
 `;
+const floatAnimation = `
+  @keyframes floatAnimation {
+    0% { transform: translateY(0) rotate(0deg); }
+    25% { transform: translateY(-5px) rotate(0.5deg); }
+    50% { transform: translateY(0) rotate(-0.5deg); }
+    75% { transform: translateY(5px) rotate(0.25deg); }
+    100% { transform: translateY(0) rotate(0deg); }
+  }
+`;
+
+const FloatingImage = styled("img")`
+  ${floatAnimation}
+  
+  animation: floatAnimation 5s ease-in-out infinite;
+`;
+
+const floatAnimation1 = `
+  @keyframes floatAnimation {
+    0% { transform: translateY(0) rotate(0deg); }
+    25% { transform: translateY(-3px) rotate(0.6deg); }
+    35% { transform: translateY(-6px) rotate(0.8deg); }
+    50% { transform: translateY(0) rotate(-0.4deg); }
+    60% { transform: translateY(1) rotate(-0.10deg); }
+    75% { transform: translateY(3px) rotate(0.27deg); }
+    100% { transform: translateY(0) rotate(0deg); }
+  }
+`;
+const FloatingImage1 = styled("img")`
+  ${floatAnimation1}
+  
+  animation: floatAnimation 8s ease-in-out infinite;
+`;
 
 const Tyme = () => {
   return (
@@ -72,8 +104,9 @@ const Tyme = () => {
             alt="Portada de tyme"
           />
         </Box>
+       
 
-        {/*   <AnimatedTextContainer bgcolor={"#1296E9"} pt={5} mt={-1}>
+       {/*   <AnimatedTextContainer bgcolor={"#1296E9"} pt={5} mt={-1}>
           <Box>
             <Typography
               sx={{
@@ -125,8 +158,8 @@ const Tyme = () => {
               </AnimatedText>
             </Typography>
           </Box>
-        </AnimatedTextContainer> */}
-        <Box
+        </AnimatedTextContainer>  */}
+         <Box
           pt={5}
           mt={-1}
           sx={{
@@ -223,14 +256,31 @@ const Tyme = () => {
         <Box
           position={"absolute"}
           top={"1790px"}
-          sx={{ left: "28.6%", transform: "translateX(-50%)" }}
+          sx={{ left: "28.6%", transform: "translateX(-50%)", zIndex:10 }}
         >
-          <img width={"890px"} height={"818px"} src="tyme/tyme5.png" alt="celu" />
+          <img
+            width={"890px"}
+            height={"818px"}
+            src="tyme/tyme5.png"
+            alt="celu"
+          />
+        </Box>
+        <Box position={"absolute"} top={"1859px"} width={"100%"}>
+          <FloatingImage width={"100%"} src="tyme/tyme6.png" alt="drayTek" />
+        </Box>
+        <Box position={"absolute"} top={"1859px"} sx={{ left: "58.6%", transform: "translateX(-50%)" }} >
+          <FloatingImage1  src="tyme/tyme7.png" alt="drayTek" />
+        </Box>
+        <Box position={"absolute"} top={"1959px"} sx={{ left: "68.6%", transform: "translateX(-50%)" }} >
+          <FloatingImage  src="tyme/tyme8.png" alt="drayTek" />
+        </Box>
+        <Box position={"absolute"} top={"2159px"} sx={{ left: "68.6%", transform: "translateX(-50%)" }} >
+          <FloatingImage1  src="tyme/tyme9.png" alt="drayTek" />
         </Box>
         <Box
           position={"absolute"}
           top={"1859px"}
-          sx={{ left: "28%", transform: "translateX(-50%)" }}
+          sx={{ left: "28%", transform: "translateX(-50%)", zIndex:11 }}
         >
           <video
             muted

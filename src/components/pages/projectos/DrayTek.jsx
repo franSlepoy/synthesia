@@ -14,7 +14,24 @@ const floatAnimation = `
 
 const FloatingImage = styled("img")`
   ${floatAnimation}
-  animation: floatAnimation 3s ease-in-out infinite;
+  animation: floatAnimation 4s ease-in-out infinite;
+`;
+
+const floatAnimation1 = `
+  @keyframes floatAnimation {
+    0% { transform: translateY(0) rotate(0deg); }
+    25% { transform: translateY(-3px) rotate(0.6deg); }
+    35% { transform: translateY(-6px) rotate(0.8deg); }
+    50% { transform: translateY(0) rotate(-0.4deg); }
+    60% { transform: translateY(1) rotate(-0.10deg); }
+    75% { transform: translateY(3px) rotate(0.27deg); }
+    100% { transform: translateY(0) rotate(0deg); }
+  }
+`;
+const FloatingImage1 = styled("img")`
+  ${floatAnimation1}
+  
+  animation: floatAnimation 8s ease-in-out infinite;
 `;
 
 const ScrollableImageContainer = styled(Box)`
@@ -102,13 +119,21 @@ const DrayTek = () => {
         >
           <FloatingImage src="/drayTek/drayTek1.png" alt="drayTek" />
         </Box>
+        <Box
+          position={"absolute"}
+          top={"345px"}
+          sx={{ left: "68%", transform: "translateX(-50%)" }}
+        >
+          <FloatingImage1 src="/drayTek/drayTek16.png" alt="drayTek" />
+        </Box>
+
 
         <Box
           position={"absolute"}
           top={"350px"}
           sx={{ left: "25%", transform: "translateX(-50%)" }}
         >
-          <FloatingImage src="/drayTek/drayTek2.png" alt="honda" />
+          <FloatingImage1 src="/drayTek/drayTek2.png" alt="honda" />
         </Box>
 
         <Box
@@ -183,14 +208,14 @@ const DrayTek = () => {
           top={"900px"}
           sx={{ left: "80.2%", transform: "translateX(-50%)" }}
         >
-          <FloatingImage src="/drayTek/drayTek5.png" alt="honda" />
+          <FloatingImage1 src="/drayTek/drayTek5.png" alt="honda" />
         </Box>
         <Box
           position={"absolute"}
           top={"880px"}
           sx={{ left: "20.2%", transform: "translateX(-50%)" }}
         >
-          <FloatingImage src="/drayTek/drayTek6.png" alt="honda" />
+          <FloatingImage1 src="/drayTek/drayTek6.png" alt="honda" />
         </Box>
         <Box
           position={"absolute"}
@@ -240,13 +265,13 @@ const DrayTek = () => {
           </Box>
         </Box>
         <Box position={"absolute"} zIndex={100} top={"3200px"}  sx={{ left: "10%", transform: "translateX(-50%)" }}>
-          <FloatingImage src="drayTek/drayTek12.png" alt="12" />
+          <FloatingImage1 src="drayTek/drayTek12.png" alt="12" />
         </Box>
         <Box position={"absolute"} zIndex={100} top={"2800px"}  sx={{ left: "10%", transform: "translateX(-50%)" }}>
           <FloatingImage src="drayTek/drayTek13.png" alt="13" />
         </Box>
         <Box position={"absolute"} zIndex={100} top={"2700px"}  sx={{ left: "60%", transform: "translateX(-50%)" }}>
-          <FloatingImage src="drayTek/drayTek14.png" alt="14" />
+          <FloatingImage1 src="drayTek/drayTek14.png" alt="14" />
         </Box>
         <Box position={"absolute"} zIndex={100} top={"2900px"}  sx={{ left: "90%", transform: "translateX(-50%)" }}>
           <FloatingImage src="drayTek/drayTek15.png" alt="15" />
